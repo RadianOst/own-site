@@ -13,6 +13,7 @@ header ul{
     overflow: hidden;
     margin: 0;
     padding: 0;
+    border-radius: 10px;
 }
 
 header ul li{
@@ -40,10 +41,15 @@ header .active{
     padding: 15px;
     background-color: #333;
     color: white;
+    border-radius: 20px;
 }
 
 .content h1{
     color: white;
+}
+
+.content ul{
+    padding: 0 20px;
 }
 
 footer{
@@ -54,4 +60,46 @@ footer{
     bottom: 0;
     right: 0;
     left: 0;
+}
+
+.image-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input{
+    margin: 5px 0;
+}
+
+textarea{
+    margin: 5px 0;
+}
+
+input[type=submit]{
+    align-self: center;
+    width: 100px;
+    padding: 5px 15px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ccc;
+    color: black;
+}
+
+input[type=submit]:hover{
+    background: darkgreen;
+    color: white;
+}
+
+input[type=submit]:disabled{
+    background: #888;
+    color: #aaa;
+    cursor: default;
 }
